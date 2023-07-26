@@ -1,0 +1,32 @@
+GET http://localhost:3001/api/persons
+
+###
+GET http://localhost:3001/api/persons/5
+
+###
+DELETE http://localhost:3001/api/persons/5
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Jesús Gabriel",
+  "phoneNumber": "777777"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Jesús Gabriel"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "phoneNumber": "777777"
+}

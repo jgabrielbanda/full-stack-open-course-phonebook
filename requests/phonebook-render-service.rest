@@ -1,0 +1,32 @@
+GET https://full-stack-open-phonebook-test.onrender.com/api/persons
+
+###
+GET https://full-stack-open-phonebook-test.onrender.com/api/persons/6
+
+###
+DELETE https://full-stack-open-phonebook-test.onrender.com/api/persons/813
+
+###
+POST https://full-stack-open-phonebook-test.onrender.com/api/persons
+Content-Type: application/json
+
+{
+  "name": "Jesús Gabriel",
+  "phoneNumber": "777777"
+}
+
+###
+POST https://full-stack-open-phonebook-test.onrender.com/api/persons
+Content-Type: application/json
+
+{
+  "name": "Jesús Gabriel"
+}
+
+###
+POST https://full-stack-open-phonebook-test.onrender.com/api/persons
+Content-Type: application/json
+
+{
+  "phoneNumber": "777777"
+}
