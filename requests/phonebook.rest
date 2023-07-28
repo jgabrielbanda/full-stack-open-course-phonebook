@@ -1,18 +1,30 @@
 GET http://localhost:3001/api/persons
 
 ###
-GET http://localhost:3001/api/persons/5
+GET http://localhost:3001/api/persons/64c1ce6a069271bdf6cdeb08
 
 ###
-DELETE http://localhost:3001/api/persons/5
+DELETE http://localhost:3001/api/persons/64c2f2638e2e0b8b00319209
+
+###
+GET http://localhost:3001/info
+
+###
+PUT http://localhost:3001/api/persons/64c31868f381af5a92cc7b4c
+Content-Type: application/json
+
+{
+  "name": "Jes",
+  "phoneNumber": "11-123456"
+}
 
 ###
 POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
-  "name": "Jesús Gabriel",
-  "phoneNumber": "777777"
+  "name": "Jes",
+  "phoneNumber": "11-1111111-2"
 }
 
 ###
